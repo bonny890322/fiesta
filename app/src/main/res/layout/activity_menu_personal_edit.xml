@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ui_fiesta"
+        android:text="個人資料"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.network.fiesta.PrettyImageView
+                android:id="@+id/img_person"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ui_person"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shape_type="SHAPE_CIRCLE"
+                app:show_border="true"
+                app:border_width="1dp"
+                app:border_color="@color/orange"/>
+
+            <TextView
+                android:id="@+id/tv_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/img_person"
+                app:layout_constraintRight_toRightOf="@+id/img_person"
+                app:layout_constraintTop_toBottomOf="@+id/img_person" />
+
+            <ImageView
+                android:id="@+id/img_tvpen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ui_pen"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nickName"
+                app:layout_constraintLeft_toRightOf="@+id/tv_nickName"
+                app:layout_constraintTop_toTopOf="@+id/tv_nickName" />
+
+            <EditText
+                android:id="@+id/et_nickName"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="@+id/img_person"
+                app:layout_constraintRight_toRightOf="@+id/img_person"
+                app:layout_constraintTop_toBottomOf="@+id/img_person" />
+
+            <ImageView
+                android:id="@+id/img_etpen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ui_pen"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/et_nickName"
+                app:layout_constraintLeft_toRightOf="@+id/et_nickName"
+                app:layout_constraintTop_toTopOf="@+id/et_nickName" />
+
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                app:layout_constraintLeft_toLeftOf="@+id/img_person"
+                app:layout_constraintRight_toRightOf="@+id/img_person"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nickName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="+曾經參加過的活動/喜歡的活動"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textColor="@color/red"
+                android:textSize="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_school" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="50dp"
+                android:src="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_school" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="#B9B9B9"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="以下為非公開資訊，僅用於報名活動報名使用。"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textSize="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_school" />
+
+            <TextView
+                android:id="@+id/temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="130dp"
+                android:text="電子郵件"
+                android:textSize="16dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_school" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@android:drawable/edit_text"
+                android:inputType="text"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/temp1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+            <ImageView
+                android:id="@+id/img_school"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_email"
+                app:layout_constraintLeft_toRightOf="@+id/et_email"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_email" />
+
+            <TextView
+                android:id="@+id/temp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="姓名"
+                android:textSize="16dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                app:layout_constraintLeft_toLeftOf="@+id/temp1"
+                app:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@android:drawable/edit_text"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/temp2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+
+            <TextView
+                android:id="@+id/temp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="生日"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/temp2"
+                app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@android:drawable/edit_text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                app:layout_constraintLeft_toLeftOf="@+id/temp3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temp3" />
+
+            <TextView
+                android:id="@+id/temp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="手機號碼"
+                android:textSize="16dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                app:layout_constraintLeft_toLeftOf="@+id/temp3"
+                app:layout_constraintTop_toBottomOf="@+id/temp3" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@android:drawable/edit_text"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/temp4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temp4" />
+
+            <TextView
+                android:id="@+id/temp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="性別"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/temp4"
+                app:layout_constraintTop_toBottomOf="@+id/temp4" />
+
+            <Spinner
+                android:id="@+id/sp_sex"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@android:drawable/edit_text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/temp5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temp5" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:max="2"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="活動顯示距離"
+                android:textSize="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/seekBar"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBar" />
+
+            <TextView
+                android:id="@+id/tv_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0km"
+                android:textSize="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/seekBar"
+                app:layout_constraintRight_toRightOf="@+id/seekBar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+#Wed Mar 17 00:38:25 GMT+08:00 2021
+base.0=C\:\\Users\\scps000710\\Desktop\\Android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\scps000710\\Desktop\\Android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes2.dex

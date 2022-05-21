@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape_round_corner_white_10"
+    android:elevation="5dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/img_group_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="5dp"
+        android:shape="ring"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.network.fiesta.PrettyImageView
+            android:id="@+id/img_group"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ui_fiestalogo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_type="SHAPE_CIRCLE"
+            app:show_border="false" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_groupname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/gen_jyuu_gothic_heavy"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_address"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/img_group_box"
+        app:layout_constraintRight_toLeftOf="@+id/btn_more"
+        app:layout_constraintTop_toTopOf="@+id/img_group_box" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_group_box"
+        app:layout_constraintLeft_toRightOf="@+id/img_group_box"
+        app:layout_constraintRight_toLeftOf="@+id/btn_more"
+        app:layout_constraintTop_toBottomOf="@+id/tv_groupname" />
+
+    <ImageView
+        android:id="@+id/btn_more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ui_more"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_groupname" />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_tag"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tag" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <com.network.fiesta.PrettyImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_group_box"
+        app:left_bottom_radiusX="10dp"
+        app:left_bottom_radiusY="10dp"
+        app:left_top_radiusX="10dp"
+        app:left_top_radiusY="10dp"
+        app:right_bottom_radiusX="10dp"
+        app:right_bottom_radiusY="10dp"
+        app:right_top_radiusX="10dp"
+        app:right_top_radiusY="10dp"
+        app:shape_type="SHAPE_ROUND"
+        app:show_border="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

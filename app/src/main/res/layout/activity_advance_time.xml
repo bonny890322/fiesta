@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.network.fiesta.SideMenuEdit">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="始末時間"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gen_jyuu_gothic_bold"
+            android:text="開始時間"
+            app:layout_constraintLeft_toLeftOf="@+id/temp1"
+            app:layout_constraintRight_toRightOf="@+id/temp1"
+            app:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+        <EditText
+            android:id="@+id/DateStart"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_capsule"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/gen_jyuu_gothic_medium"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="@+id/temp2"
+            app:layout_constraintRight_toRightOf="@+id/temp2"
+            app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+        <TextView
+            android:id="@+id/temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gen_jyuu_gothic_bold"
+            android:text="結束時間"
+            app:layout_constraintLeft_toLeftOf="@+id/DateStart"
+            app:layout_constraintRight_toRightOf="@+id/DateStart"
+            app:layout_constraintTop_toBottomOf="@+id/DateStart" />
+
+
+        <EditText
+            android:id="@+id/DateEnd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_capsule"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/gen_jyuu_gothic_medium"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="@+id/temp3"
+            app:layout_constraintRight_toRightOf="@+id/temp3"
+            app:layout_constraintTop_toBottomOf="@+id/temp3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="進階活動模組說明"
+        android:textColor="@color/orange"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <Switch
+        android:id="@+id/switch_advance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="打開進階活動模組"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_advance"
+        app:tabMode="scrollable" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/datepager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

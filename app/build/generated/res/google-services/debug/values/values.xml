@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1058250559348-stq4keplhejk9cqmck48vt54rgk7l71n.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://fiesta-c7f35.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1058250559348</string>
+    <string name="google_api_key" translatable="false">AIzaSyCE4yEyZeqIE0gUS_CkCVaGEvVU492I35k</string>
+    <string name="google_app_id" translatable="false">1:1058250559348:android:7d30205b9786f4e56ba621</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCE4yEyZeqIE0gUS_CkCVaGEvVU492I35k</string>
+    <string name="google_storage_bucket" translatable="false">fiesta-c7f35.appspot.com</string>
+    <string name="project_id" translatable="false">fiesta-c7f35</string>
+</resources>

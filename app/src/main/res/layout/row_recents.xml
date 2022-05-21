@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rec_Img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/rec_Content"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/rec_Img"
+        app:layout_constraintTop_toTopOf="@+id/rec_Img" />
+
+    <TextView
+        android:id="@+id/rec_Sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/rec_Img"
+        app:layout_constraintStart_toStartOf="@+id/rec_Img"
+        app:layout_constraintTop_toBottomOf="@+id/rec_Img" />
+
+    <ImageView
+        android:id="@+id/img_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/rec_Content"
+        app:layout_constraintStart_toStartOf="@+id/rec_Content"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

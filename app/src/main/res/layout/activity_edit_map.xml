@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/shape_capsule_white"
+        android:textColorHint="#FFFFFF"
+        android:gravity="center"
+        android:hint="搜尋"
+        android:inputType="text"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ui_location"
+        app:layout_constraintBottom_toBottomOf="@+id/et_location"
+        app:layout_constraintRight_toLeftOf="@+id/et_location"
+        app:layout_constraintTop_toTopOf="@+id/et_location" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ui_button1"
+        android:text="完成"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        map:layout_constraintBottom_toTopOf="@+id/btn_done"
+        map:layout_constraintLeft_toLeftOf="parent"
+        map:layout_constraintRight_toRightOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/et_location" />
+</androidx.constraintlayout.widget.ConstraintLayout>

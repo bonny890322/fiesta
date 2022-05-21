@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "1058250559348",
+    "firebase_url": "https://fiesta-c7f35.firebaseio.com",
+    "project_id": "fiesta-c7f35",
+    "storage_bucket": "fiesta-c7f35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058250559348:android:e335c9a0c398f1636ba621",
+        "android_client_info": {
+          "package_name": "com.example.fiesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058250559348-stq4keplhejk9cqmck48vt54rgk7l71n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE4yEyZeqIE0gUS_CkCVaGEvVU492I35k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058250559348-stq4keplhejk9cqmck48vt54rgk7l71n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1058250559348-ub8q61kijl2r8l95putd6gss3nm021tu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Fiesta-Network.inc.Fiesta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058250559348:android:7d30205b9786f4e56ba621",
+        "android_client_info": {
+          "package_name": "com.network.fiesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058250559348-sqv2kqn83i337tuo16kh31m0h035eims.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.network.fiesta",
+            "certificate_hash": "53386ebed094baebf04cb121ef549fbd71528b3c"
+          }
+        },
+        {
+          "client_id": "1058250559348-stq4keplhejk9cqmck48vt54rgk7l71n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE4yEyZeqIE0gUS_CkCVaGEvVU492I35k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058250559348-stq4keplhejk9cqmck48vt54rgk7l71n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1058250559348-ub8q61kijl2r8l95putd6gss3nm021tu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Fiesta-Network.inc.Fiesta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

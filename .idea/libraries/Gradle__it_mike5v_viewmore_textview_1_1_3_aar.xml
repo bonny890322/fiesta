@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: it.mike5v:viewmore-textview:1.1.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cee833b15dd6c4819f979b15c3a5a3fb/viewmore-textview-1.1.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cee833b15dd6c4819f979b15c3a5a3fb/viewmore-textview-1.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cee833b15dd6c4819f979b15c3a5a3fb/viewmore-textview-1.1.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.mike5v/viewmore-textview/1.1.3/cac36002e0400641cd48a2c15ccef2101a71e533/viewmore-textview-1.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.mike5v/viewmore-textview/1.1.3/71c085f3f9f13354f8a233a45c7a0bd7c243cc81/viewmore-textview-1.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ui_buyticketsuccess"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="訂購完成"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_act"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ui_fiesta"
+        android:elevation="6dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_corner_white_10"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="titile"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/img_act"
+        app:layout_constraintTop_toTopOf="@+id/img_act" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="location"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/img_act"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="date"
+        android:textColor="@color/orange"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/img_act"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:elevation="6dp"
+        android:src="@color/lightgray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_act" />
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ui_fiesta"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="進場時請掃QR Code進場"
+        app:layout_constraintEnd_toEndOf="@+id/qrcode"
+        app:layout_constraintStart_toStartOf="@+id/qrcode"
+        app:layout_constraintTop_toBottomOf="@+id/qrcode" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:elevation="6dp"
+        android:src="@color/lightgray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="購票種類:"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/img_act"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_round_corner_orange"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ticketSort"
+        app:layout_constraintEnd_toEndOf="@+id/tv_ticketSort"
+        app:layout_constraintStart_toStartOf="@+id/tv_ticketSort"
+        app:layout_constraintTop_toTopOf="@+id/tv_ticketSort" />
+
+    <TextView
+        android:id="@+id/tv_ticketSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:padding="20dp"
+        android:text="票種 NT票價"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/tv_ticket"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/img_loading"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:alpha="0.5"
+        android:src="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_done"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="返回首頁"
+        android:textColor="@color/white"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cornerRadius="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

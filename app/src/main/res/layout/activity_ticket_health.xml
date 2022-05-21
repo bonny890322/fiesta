@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="確認訂單"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_round_corner_white_10"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:padding="10dp"
+                android:text="為配合政府實施實名制，需請您留下您 的真實資料。\n*此資料不會用於其他用途，僅供防疫情 間使用，請您放心。"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/imageView10"
+                app:layout_constraintLeft_toLeftOf="@id/imageView10"
+                app:layout_constraintRight_toRightOf="@id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="0dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_round_corner_white_10"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                app:layout_constraintStart_toStartOf="@+id/imageView10"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="真實姓名"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/edit_text"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:hint="請輸入姓名"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView13"
+                app:layout_constraintRight_toRightOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="身分證字號"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/et_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/edit_text"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:hint="請輸入身分證字號"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView13"
+                app:layout_constraintRight_toRightOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="連絡電話"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/et_id"
+                app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/edit_text"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_regular"
+                android:hint="請輸入連絡電話"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView13"
+                app:layout_constraintRight_toRightOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="0dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_round_corner_white_10"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView13"
+                app:layout_constraintStart_toStartOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="過去 14 天內是否有發燒、咳嗽或呼吸急促等 上呼吸道症狀？"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView14"
+                app:layout_constraintRight_toRightOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+            <RadioGroup
+                android:id="@+id/radio_A"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView14"
+                app:layout_constraintRight_toRightOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView33">
+
+                <RadioButton
+                    android:id="@+id/A_Y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gen_jyuu_gothic_bold"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/A_N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gen_jyuu_gothic_bold"
+                    android:text="否" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="最近 14 天，有無出國或前往高感染風險地區 ？"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView14"
+                app:layout_constraintRight_toRightOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/radio_A" />
+
+            <RadioGroup
+                android:id="@+id/radio_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView14"
+                app:layout_constraintRight_toRightOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView35">
+
+                <RadioButton
+                    android:id="@+id/B_Y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gen_jyuu_gothic_bold"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/B_N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gen_jyuu_gothic_bold"
+                    android:text="否" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="最近 14 天，有無與居家檢疫、居家隔離者接 觸？"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView14"
+                app:layout_constraintRight_toRightOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/radio_B" />
+
+            <RadioGroup
+                android:id="@+id/radio_C"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView14"
+                app:layout_constraintRight_toRightOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView36">
+
+                <RadioButton
+                    android:id="@+id/C_Y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gen_jyuu_gothic_bold"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/C_N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gen_jyuu_gothic_bold"
+                    android:text="否" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_round_corner_white_10"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                app:layout_constraintStart_toStartOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="我了解此份健康聲明表所取得的資料，主辦單 位僅能用於防疫需求，並已照實填寫相關資料。"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView15"
+                app:layout_constraintRight_toRightOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:text="是"
+                app:layout_constraintLeft_toLeftOf="@+id/textView37"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_done"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/orange"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:cornerRadius="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintLeft_toRightOf="@+id/btn_cancel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

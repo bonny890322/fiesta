@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_substatus"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="此使用者已經驗過票囉!"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+    <TextView
+        android:id="@+id/temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:text="暱稱:"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_status"
+        app:layout_constraintTop_toBottomOf="@+id/tv_substatus" />
+
+    <TextView
+        android:id="@+id/tv_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toRightOf="@+id/temp1"
+        app:layout_constraintTop_toTopOf="@+id/temp1" />
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:text="票種:"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="@+id/temp1"
+        app:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+    <TextView
+        android:id="@+id/tv_ticketKinds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toRightOf="@+id/temp2"
+        app:layout_constraintTop_toTopOf="@+id/temp2" />
+
+    <TextView
+        android:id="@+id/temp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:text="備註:"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="@+id/temp2"
+        app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+    <EditText
+        android:id="@+id/et_Notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="false"
+        android:fontFamily="@font/gen_jyuu_gothic_regular"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toRightOf="@+id/temp3"
+        app:layout_constraintRight_toRightOf="@+id/tv_status"
+        app:layout_constraintTop_toTopOf="@+id/temp3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/gen_jyuu_gothic_bold"
+        android:text="確定"
+        android:textColor="#FFFFFF"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Notes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

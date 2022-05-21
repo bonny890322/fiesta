@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxWidth="300dp"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:fontFamily="@font/gen_jyuu_gothic_bold"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/img"
+            app:layout_constraintRight_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <it.mike5v.viewmoretextview.ViewMoreTextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxWidth="300dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:duration="200"
+            app:ellipsizeText="顯示更多"
+            app:layout_constraintLeft_toLeftOf="@+id/img"
+            app:layout_constraintRight_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:visibleLines="2" />
+
+        <ImageView
+            android:id="@+id/img_date"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ui_calendar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:maxWidth="330dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/gen_jyuu_gothic_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/img_date"
+            app:layout_constraintLeft_toRightOf="@+id/img_date"
+            app:layout_constraintTop_toTopOf="@id/img_date" />
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ui_location"
+            app:layout_constraintLeft_toLeftOf="@+id/img_date"
+            app:layout_constraintTop_toBottomOf="@+id/img_date" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:maxWidth="330dp"
+            android:fontFamily="@font/gen_jyuu_gothic_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/img_location"
+            app:layout_constraintLeft_toRightOf="@+id/img_location"
+            app:layout_constraintTop_toTopOf="@+id/img_location" />
+        <!--逼不得已 不然按鈕會在畫面最前面-->
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_location">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/orange"
+                android:text="顯示入場QRcode"
+                android:fontFamily="@font/gen_jyuu_gothic_bold"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:cornerRadius="100dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/quantum_grey400"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="活動日請掃此條碼入場。"
+            android:fontFamily="@font/gen_jyuu_gothic_medium"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+        <com.network.fiesta.PrettyImageView
+            android:id="@+id/img"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ui_fiestalogo2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:left_bottom_radiusX="23dp"
+            app:left_bottom_radiusY="23dp"
+            app:left_top_radiusX="23dp"
+            app:left_top_radiusY="23dp"
+            app:right_bottom_radiusX="23dp"
+            app:right_bottom_radiusY="23dp"
+            app:right_top_radiusX="23dp"
+            app:right_top_radiusY="23dp"
+            app:shape_type="SHAPE_ROUND"
+            app:show_border="false" />
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:alpha="0.5"
+            android:src="#FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_Bar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="true"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

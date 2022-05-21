@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fiesta</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="connect_fail">網路連線錯誤</string>
+
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>+886</item>
+    </string-array>
+</resources>

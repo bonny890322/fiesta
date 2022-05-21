@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="首頁" />
+    </group>
+    <group
+        android:id="@+id/g2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_create"
+            android:icon="@drawable/ic_add_circle"
+            android:title="創建活動" />
+    </group>
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_edit"
+            android:icon="@drawable/ic_edit"
+            android:title="編輯活動" />
+    </group>
+    <group
+        android:id="@+id/g4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_group"
+            android:icon="@drawable/ic_group"
+            android:title="管理群組" />
+    </group>
+    <group
+        android:id="@+id/g5"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_ticket"
+            android:icon="@drawable/ui_ticket"
+            android:title="票據" />
+    </group>
+    <group
+        android:id="@+id/g6"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="設定" />
+    </group>
+
+
+
+</menu>

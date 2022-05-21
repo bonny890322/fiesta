@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_login">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:src="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/SignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/gen_jyuu_gothic_extra_light"
+        android:text="還沒有帳號嗎？點此註冊"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--逼不得已 不然按鈕會在畫面最前面-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/et_password"
+        app:layout_constraintRight_toRightOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/gen_jyuu_gothic_bold"
+            android:text="登入"
+            android:textSize="16dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cornerRadius="40dp" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_userId"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_capsule_white"
+        android:fontFamily="@font/gen_jyuu_gothic_extra_light"
+        android:hint="帳號"
+        android:inputType="text"
+        android:padding="6dp"
+        android:textColorHint="@color/orange"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_capsule_white"
+        android:focusable="auto"
+        android:fontFamily="@font/gen_jyuu_gothic_extra_light"
+        android:hint="密碼"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:textColorHint="@color/orange"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_userId" />
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ui_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password"
+        app:layout_constraintRight_toRightOf="@+id/et_password"
+        app:layout_constraintTop_toTopOf="@+id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_foget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/gen_jyuu_gothic_heavy"
+        android:text="忘記密碼?"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/img_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_foget" />
+
+
+    <ImageView
+        android:id="@+id/img_google"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ui_google"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_facebook"
+        app:layout_constraintTop_toTopOf="@+id/img_facebook" />
+
+    <ImageView
+        android:id="@+id/img_facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ui_facebook"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/img_twitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ui_twitter"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/img_facebook"
+        app:layout_constraintTop_toTopOf="@+id/img_facebook" />
+
+
+    <ImageView
+        android:id="@+id/img_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:src="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

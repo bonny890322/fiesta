@@ -1,0 +1,602 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.network.fiesta"
+4    android:versionCode="2"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:10:5-81
+15-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:11:5-79
+16-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:12:5-81
+17-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:12:22-78
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:13:5-67
+18-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:14:5-65
+19-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
+20-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:10:5-76
+20-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:10:22-73
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+22
+23    <uses-feature
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+24        android:glEsVersion="0x00020000"
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+25        android:required="true" />
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+26
+27    <uses-permission android:name="android.permission.WAKE_LOCK" />
+27-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:25:5-68
+27-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:25:22-65
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+28-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:26:22-107
+29    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+29-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+29-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
+30
+31    <application
+31-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:16:5-196:19
+32        android:allowBackup="true"
+32-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:17:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.2.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\fe6aaa21ae04a74588c8a4b9c24a61e8\core-1.2.0\AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:hardwareAccelerated="true"
+35-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:18:9-43
+36        android:icon="@mipmap/ic_launcher"
+36-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:19:9-43
+37        android:label="@string/app_name"
+37-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:20:9-41
+38        android:largeHeap="true"
+38-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:21:9-33
+39        android:networkSecurityConfig="@xml/network_config"
+39-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:22:9-60
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:23:9-54
+41        android:supportsRtl="true"
+41-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:24:9-35
+42        android:testOnly="true"
+43        android:theme="@style/AppTheme" >
+43-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:25:9-40
+44
+45        <!--
+46             The API key for Google Maps-based APIs is defined as a string resource.
+47             (See the file "res/values/google_maps_api.xml").
+48             Note that the API key is linked to the encryption key used to sign the APK.
+49             You need a different API key for each encryption key, including the release key that is used to
+50             sign the APK for publishing.
+51             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+52        -->
+53        <meta-data
+53-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:34:9-36:55
+54            android:name="com.google.android.geo.API_KEY"
+54-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:35:13-58
+55            android:value="@string/google_maps_key" />
+55-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:36:13-52
+56
+57        <activity
+57-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:38:9-64:20
+58            android:name="com.network.fiesta.TicketBuyActivity"
+58-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:39:13-46
+59            android:screenOrientation="portrait" >
+59-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:40:13-49
+60            <intent-filter>
+60-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:41:13-51:29
+61                <action android:name="android.intent.action.VIEW" />
+61-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:42:17-69
+61-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:42:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:44:17-76
+63-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:44:27-73
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:45:17-78
+64-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:45:27-75
+65
+66                <data
+66-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:47:17-50:46
+67                    android:host="fiesta-o2o.tw"
+67-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:48:21-49
+68                    android:pathPattern="/Activity/.*/"
+68-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:49:21-56
+69                    android:scheme="https" />
+69-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:50:21-43
+70            </intent-filter>
+71            <intent-filter>
+71-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:52:13-63:29
+72                <action android:name="android.intent.action.VIEW" />
+72-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:42:17-69
+72-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:42:25-66
+73
+74                <category android:name="android.intent.category.DEFAULT" />
+74-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:44:17-76
+74-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:44:27-73
+75                <category android:name="android.intent.category.BROWSABLE" />
+75-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:45:17-78
+75-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:45:27-75
+76
+77                <data
+77-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:47:17-50:46
+78                    android:host="fiesta-o2o.tw"
+78-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:48:21-49
+79                    android:pathPattern="/Activity/.*/"
+79-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:49:21-56
+80                    android:port="4567"
+80-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:61:21-40
+81                    android:scheme="http" />
+81-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:50:21-43
+82            </intent-filter>
+83        </activity>
+84        <activity
+84-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:66:9-68:52
+85            android:name="com.network.fiesta.BuyTicketHealthActivity"
+85-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:67:13-52
+86            android:screenOrientation="portrait" />
+86-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:68:13-49
+87        <activity
+87-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:69:9-71:52
+88            android:name="com.network.fiesta.BuyTicketDetailActivity"
+88-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:70:13-52
+89            android:screenOrientation="portrait" />
+89-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:71:13-49
+90        <activity
+90-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:72:9-74:52
+91            android:name="com.network.fiesta.BuyTicketActivity"
+91-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:73:13-46
+92            android:screenOrientation="portrait" />
+92-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:74:13-49
+93        <activity
+93-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:75:9-77:52
+94            android:name="com.network.fiesta.CreateDetailActivity"
+94-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:76:13-49
+95            android:screenOrientation="portrait" />
+95-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:77:13-49
+96        <activity
+96-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:78:9-80:52
+97            android:name="com.network.fiesta.CreateActActivity"
+97-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:79:13-46
+98            android:screenOrientation="portrait" />
+98-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:80:13-49
+99        <activity
+99-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:81:9-83:52
+100            android:name="com.network.fiesta.SideMenuTicket"
+100-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:82:13-43
+101            android:screenOrientation="portrait" />
+101-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:83:13-49
+102        <activity
+102-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:84:9-86:52
+103            android:name="com.network.fiesta.SideMenuSetting"
+103-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:85:13-44
+104            android:screenOrientation="portrait" />
+104-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:86:13-49
+105        <activity
+105-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:87:9-89:52
+106            android:name="com.network.fiesta.SideMenuPersonal"
+106-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:88:13-45
+107            android:screenOrientation="portrait" />
+107-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:89:13-49
+108        <activity
+108-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:90:9-92:52
+109            android:name="com.network.fiesta.EditTicketSellActivity"
+109-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:91:13-51
+110            android:screenOrientation="portrait" />
+110-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:92:13-49
+111        <activity
+111-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:93:9-95:52
+112            android:name="com.network.fiesta.EditTicketFeedbackDetailActivity"
+112-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:94:13-61
+113            android:screenOrientation="portrait" />
+113-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:95:13-49
+114        <activity
+114-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:96:9-98:52
+115            android:name="com.network.fiesta.SettingPrivacyActivity"
+115-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:97:13-51
+116            android:screenOrientation="portrait" />
+116-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:98:13-49
+117        <activity
+117-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:99:9-101:52
+118            android:name="com.network.fiesta.SettingCopyrightActivity"
+118-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:100:13-53
+119            android:screenOrientation="portrait" />
+119-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:101:13-49
+120        <activity
+120-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:102:9-104:52
+121            android:name="com.network.fiesta.LoginForgetActivity"
+121-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:103:13-48
+122            android:screenOrientation="portrait" />
+122-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:104:13-49
+123        <activity
+123-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:105:9-107:52
+124            android:name="com.network.fiesta.TicketDetailActivity"
+124-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:106:13-49
+125            android:screenOrientation="portrait" />
+125-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:107:13-49
+126        <activity
+126-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:108:9-110:52
+127            android:name="com.network.fiesta.TicketFeedBack"
+127-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:109:13-43
+128            android:screenOrientation="portrait" />
+128-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:110:13-49
+129        <activity
+129-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:111:9-113:52
+130            android:name="com.network.fiesta.EditTicketFeedbackActivity"
+130-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:112:13-55
+131            android:screenOrientation="portrait" />
+131-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:113:13-49
+132        <activity
+132-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:114:9-116:52
+133            android:name="com.network.fiesta.EditTicketStatusActivity"
+133-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:115:13-53
+134            android:screenOrientation="portrait" />
+134-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:116:13-49
+135        <activity
+135-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:117:9-119:52
+136            android:name="com.network.fiesta.EditLottteActivity"
+136-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:118:13-47
+137            android:screenOrientation="portrait" />
+137-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:119:13-49
+138        <activity
+138-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:120:9-122:52
+139            android:name="com.network.fiesta.GroupActivity"
+139-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:121:13-42
+140            android:screenOrientation="portrait" />
+140-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:122:13-49
+141        <activity
+141-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:123:9-125:52
+142            android:name="com.network.fiesta.SideMenuGroup"
+142-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:124:13-42
+143            android:screenOrientation="portrait" />
+143-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:125:13-49
+144        <activity
+144-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:126:9-128:52
+145            android:name="com.network.fiesta.EditTicketQRCodeActivity"
+145-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:127:13-53
+146            android:screenOrientation="portrait" />
+146-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:128:13-49
+147        <activity
+147-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:129:9-131:52
+148            android:name="com.network.fiesta.EditTicketActivity"
+148-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:130:13-47
+149            android:screenOrientation="portrait" />
+149-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:131:13-49
+150        <activity
+150-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:132:9-134:52
+151            android:name="com.network.fiesta.TicketBuyOldActivity"
+151-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:133:13-49
+152            android:screenOrientation="portrait" />
+152-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:134:13-49
+153        <activity
+153-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:135:9-137:52
+154            android:name="com.network.fiesta.EditMapActivity"
+154-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:136:13-44
+155            android:screenOrientation="portrait" />
+155-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:137:13-49
+156        <activity
+156-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:138:9-140:52
+157            android:name="com.network.fiesta.EditAdvanceTimeActivity"
+157-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:139:13-52
+158            android:screenOrientation="portrait" />
+158-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:140:13-49
+159        <activity
+159-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:141:9-143:52
+160            android:name="com.network.fiesta.EditAdvancePriceActivity"
+160-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:142:13-53
+161            android:screenOrientation="portrait" />
+161-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:143:13-49
+162        <activity
+162-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:144:9-146:52
+163            android:name="com.network.fiesta.EditActivity"
+163-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:145:13-41
+164            android:screenOrientation="portrait" />
+164-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:146:13-49
+165        <activity
+165-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:147:9-149:52
+166            android:name="com.network.fiesta.SideMenuEdit"
+166-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:148:13-41
+167            android:screenOrientation="portrait" />
+167-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:149:13-49
+168        <activity
+168-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:150:9-152:52
+169            android:name="com.network.fiesta.SearchActivity"
+169-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:151:13-43
+170            android:screenOrientation="portrait" />
+170-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:152:13-49
+171        <activity
+171-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:153:9-155:52
+172            android:name="com.network.fiesta.TagActivity"
+172-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:154:13-40
+173            android:screenOrientation="portrait" />
+173-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:155:13-49
+174        <activity
+174-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:156:9-158:52
+175            android:name="com.network.fiesta.SideMenuCreate"
+175-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:157:13-43
+176            android:screenOrientation="portrait" />
+176-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:158:13-49
+177        <activity
+177-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:159:9-161:52
+178            android:name="com.network.fiesta.RemindActivity"
+178-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:160:13-43
+179            android:screenOrientation="portrait" />
+179-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:161:13-49
+180        <activity
+180-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:162:9-164:52
+181            android:name="com.network.fiesta.CreateLocationActivity"
+181-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:163:13-51
+182            android:screenOrientation="portrait" />
+182-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:164:13-49
+183        <activity
+183-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:165:9-167:52
+184            android:name="com.network.fiesta.LoginTagActivity"
+184-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:166:13-45
+185            android:screenOrientation="portrait" />
+185-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:167:13-49
+186        <activity
+186-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:168:9-170:52
+187            android:name="com.network.fiesta.SingUpActivity"
+187-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:169:13-43
+188            android:screenOrientation="portrait" />
+188-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:170:13-49
+189        <activity
+189-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:171:9-173:52
+190            android:name="com.network.fiesta.LoginActivity"
+190-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:172:13-42
+191            android:screenOrientation="portrait" />
+191-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:173:13-49
+192        <activity
+192-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:174:9-176:52
+193            android:name="com.network.fiesta.CreateTagActivity"
+193-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:175:13-46
+194            android:screenOrientation="portrait" />
+194-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:176:13-49
+195        <activity
+195-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:177:9-179:52
+196            android:name="com.network.fiesta.MenuActivity"
+196-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:178:13-41
+197            android:screenOrientation="portrait" />
+197-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:179:13-49
+198        <activity
+198-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:180:9-182:52
+199            android:name="com.network.fiesta.SingUpEmailActivity"
+199-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:181:13-48
+200            android:screenOrientation="portrait" />
+200-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:182:13-49
+201        <activity
+201-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:183:9-185:52
+202            android:name="com.network.fiesta.SideMenuPersonalinformationEditActivity"
+202-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:184:13-68
+203            android:screenOrientation="portrait" />
+203-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:185:13-49
+204        <activity
+204-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:186:9-195:20
+205            android:name="com.network.fiesta.LoadingActivity"
+205-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:187:13-44
+206            android:screenOrientation="portrait" >
+206-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:188:13-49
+207            <intent-filter>
+207-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:189:13-194:29
+208                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+208-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:190:17-78
+208-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:190:25-75
+209                <action android:name="android.intent.action.MAIN" />
+209-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:191:17-69
+209-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:191:25-66
+210
+211                <category android:name="android.intent.category.LAUNCHER" />
+211-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:193:17-77
+211-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:193:27-74
+212            </intent-filter>
+213        </activity>
+214        <activity
+214-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:14:9-20:20
+215            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+215-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:15:13-91
+216            android:exported="false"
+216-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:16:13-37
+217            android:label="@string/places_autocomplete_label"
+217-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:17:13-62
+218            android:theme="@style/PlacesAutocompleteOverlay"
+218-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:18:13-61
+219            android:windowSoftInputMode="adjustResize" >
+219-->[com.google.android.libraries.places:places:2.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\65d0f3f7370f97ce92b40baddead1e5c\places-2.4.0\AndroidManifest.xml:19:13-55
+220        </activity> <!-- Needs to be explicitly declared on P+ -->
+221        <uses-library
+221-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+222            android:name="org.apache.http.legacy"
+222-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+223            android:required="false" />
+223-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c46770bce5cdbd64283023955210b8a0\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+224        <!--
+225             FirebaseMessagingService performs security checks at runtime,
+226             but set to not exported to explicitly avoid allowing another app to call it.
+227        -->
+228        <service
+228-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+229            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+229-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+230            android:directBootAware="true"
+230-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+231            android:exported="false" >
+231-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+232            <intent-filter android:priority="-500" >
+232-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:13-34:29
+232-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:28-51
+233                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+233-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:190:17-78
+233-->C:\Users\scps000710\Desktop\Android\app\src\main\AndroidManifest.xml:190:25-75
+234            </intent-filter>
+235        </service>
+236        <service
+236-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:36:9-42:19
+237            android:name="com.google.firebase.components.ComponentDiscoveryService"
+237-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:37:13-84
+238            android:directBootAware="true"
+238-->[com.google.firebase:firebase-common:19.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\74a735b1e788caf8e123ed4e74b557e3\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+239            android:exported="false" >
+239-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:38:13-37
+240            <meta-data
+240-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+241                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+241-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+242                android:value="com.google.firebase.components.ComponentRegistrar" />
+242-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c3783f020fb137c2dfd4812644e9e0f9\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+243            <meta-data
+243-->[com.google.android.gms:play-services-measurement-api:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\0043d73e12a6054ae1ce6bec6fb708be\play-services-measurement-api-17.4.0\AndroidManifest.xml:30:13-32:85
+244                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+244-->[com.google.android.gms:play-services-measurement-api:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\0043d73e12a6054ae1ce6bec6fb708be\play-services-measurement-api-17.4.0\AndroidManifest.xml:31:17-139
+245                android:value="com.google.firebase.components.ComponentRegistrar" />
+245-->[com.google.android.gms:play-services-measurement-api:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\0043d73e12a6054ae1ce6bec6fb708be\play-services-measurement-api-17.4.0\AndroidManifest.xml:32:17-82
+246            <meta-data
+246-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+247                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+247-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+248                android:value="com.google.firebase.components.ComponentRegistrar" />
+248-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+249            <meta-data
+249-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ff829313cec684c681afb5e24b70ebb0\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+250                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+250-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ff829313cec684c681afb5e24b70ebb0\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+251                android:value="com.google.firebase.components.ComponentRegistrar" />
+251-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ff829313cec684c681afb5e24b70ebb0\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+252            <meta-data
+252-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\2bce8c87a701764208325f8578d8b7fc\firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+253                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+253-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\2bce8c87a701764208325f8578d8b7fc\firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+254                android:value="com.google.firebase.components.ComponentRegistrar" />
+254-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\2bce8c87a701764208325f8578d8b7fc\firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+255        </service>
+256
+257        <receiver
+257-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:29:9-33:20
+258            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+258-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:30:13-85
+259            android:enabled="true"
+259-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:31:13-35
+260            android:exported="false" >
+260-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:32:13-37
+261        </receiver>
+262
+263        <service
+263-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:35:9-38:40
+264            android:name="com.google.android.gms.measurement.AppMeasurementService"
+264-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:36:13-84
+265            android:enabled="true"
+265-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:37:13-35
+266            android:exported="false" />
+266-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:38:13-37
+267        <service
+267-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:39:9-43:72
+268            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+268-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:40:13-87
+269            android:enabled="true"
+269-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:41:13-35
+270            android:exported="false"
+270-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:42:13-37
+271            android:permission="android.permission.BIND_JOB_SERVICE" />
+271-->[com.google.android.gms:play-services-measurement:17.4.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\b3dbf030fb660bf195e41b1ff4583459\play-services-measurement-17.4.0\AndroidManifest.xml:43:13-69
+272
+273        <receiver
+273-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+274            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+274-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+275            android:exported="true"
+275-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+276            android:permission="com.google.android.c2dm.permission.SEND" >
+276-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+277            <intent-filter>
+277-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+278                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+278-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:42:17-81
+278-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\380a0d930f94108e7ce131d88ba8da76\firebase-iid-21.0.0\AndroidManifest.xml:42:25-78
+279            </intent-filter>
+280        </receiver>
+281
+282        <activity
+282-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c2710cc172001c36ea879ffebb3154fb\play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+283            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+283-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c2710cc172001c36ea879ffebb3154fb\play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+284            android:exported="false"
+284-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c2710cc172001c36ea879ffebb3154fb\play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+285            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+285-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\c2710cc172001c36ea879ffebb3154fb\play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+286
+287        <provider
+287-->[com.google.firebase:firebase-common:19.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\74a735b1e788caf8e123ed4e74b557e3\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+288            android:name="com.google.firebase.provider.FirebaseInitProvider"
+288-->[com.google.firebase:firebase-common:19.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\74a735b1e788caf8e123ed4e74b557e3\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+289            android:authorities="com.network.fiesta.firebaseinitprovider"
+289-->[com.google.firebase:firebase-common:19.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\74a735b1e788caf8e123ed4e74b557e3\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+290            android:exported="false"
+290-->[com.google.firebase:firebase-common:19.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\74a735b1e788caf8e123ed4e74b557e3\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+291            android:initOrder="100" />
+291-->[com.google.firebase:firebase-common:19.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\74a735b1e788caf8e123ed4e74b557e3\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+292
+293        <meta-data
+293-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\2bdd7096763e924d96c2ea0b6f07a9d6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+294            android:name="com.google.android.gms.version"
+294-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\2bdd7096763e924d96c2ea0b6f07a9d6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+295            android:value="@integer/google_play_services_version" />
+295-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\2bdd7096763e924d96c2ea0b6f07a9d6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+296
+297        <provider
+297-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ecee552b0052ffca43dcac20244bffaf\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+298            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+298-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ecee552b0052ffca43dcac20244bffaf\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+299            android:authorities="com.network.fiesta.lifecycle-process"
+299-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ecee552b0052ffca43dcac20244bffaf\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+300            android:exported="false"
+300-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ecee552b0052ffca43dcac20244bffaf\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+301            android:multiprocess="true" />
+301-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ecee552b0052ffca43dcac20244bffaf\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+302
+303        <service
+303-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\e56767658e94beb64f85cc7d03979305\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+304            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+304-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\e56767658e94beb64f85cc7d03979305\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+305            android:exported="false" >
+305-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\e56767658e94beb64f85cc7d03979305\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+306            <meta-data
+306-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\e56767658e94beb64f85cc7d03979305\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+307                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+307-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\e56767658e94beb64f85cc7d03979305\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+308                android:value="cct" />
+308-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\e56767658e94beb64f85cc7d03979305\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+309        </service>
+310        <service
+310-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+311            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+311-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+312            android:exported="false"
+312-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+313            android:permission="android.permission.BIND_JOB_SERVICE" >
+313-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+314        </service>
+315
+316        <receiver
+316-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+317            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+317-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+318            android:exported="false" />
+318-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\scps000710\.gradle\caches\transforms-2\files-2.1\ebdcf9ef7d91c162eb8b8d98a73cac4f\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+319    </application>
+320
+321</manifest>

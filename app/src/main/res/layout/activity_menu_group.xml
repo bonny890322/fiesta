@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoAnchorPoint="0.9"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="管理群組"
+            android:fontFamily="@font/gen_jyuu_gothic_bold"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            sothree:layout_constraintLeft_toLeftOf="parent"
+            sothree:layout_constraintRight_toRightOf="parent"
+            sothree:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="我的群組"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            sothree:layout_constraintEnd_toEndOf="parent"
+            sothree:layout_constraintLeft_toLeftOf="parent"
+            sothree:layout_constraintStart_toStartOf="parent"
+            sothree:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_addgroup"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/orange"
+            android:text="+"
+            android:textColor="@color/white"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            sothree:cornerRadius="100dp"
+            sothree:layout_constraintBottom_toBottomOf="parent"
+            sothree:layout_constraintEnd_toEndOf="parent"
+            sothree:layout_constraintRight_toRightOf="parent"
+            sothree:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/groupList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            sothree:layout_constraintBottom_toTopOf="@+id/btn_addgroup"
+            sothree:layout_constraintEnd_toEndOf="parent"
+            sothree:layout_constraintStart_toStartOf="parent"
+            sothree:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="新增群組"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="群組名稱"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_groupname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="輸入群組名稱"
+            app:layout_constraintLeft_toLeftOf="@+id/temp3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp3" />
+
+        <TextView
+            android:id="@+id/temp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="搜尋成員"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/et_groupname"
+            app:layout_constraintTop_toBottomOf="@+id/et_groupname" />
+
+        <EditText
+            android:id="@+id/et_groupmember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="輸入名稱"
+            app:layout_constraintLeft_toLeftOf="@+id/temp4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp4" />
+
+        <TextView
+            android:id="@+id/temp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="已加入"
+            app:layout_constraintLeft_toLeftOf="@+id/et_groupmember"
+            app:layout_constraintTop_toBottomOf="@+id/et_groupmember" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:layout_constraintLeft_toLeftOf="@+id/temp5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp5" />
+
+        <TextView
+            android:id="@+id/temp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜尋結果"
+            app:layout_constraintLeft_toLeftOf="@+id/view_member"
+            app:layout_constraintTop_toBottomOf="@+id/view_member" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view_search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_done"
+            app:layout_constraintLeft_toLeftOf="@+id/temp6"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="@color/orange"
+            android:text="創建群組"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:src="#FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_Bar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="true"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
